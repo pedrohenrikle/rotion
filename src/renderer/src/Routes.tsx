@@ -11,7 +11,7 @@ export function Routes() {
         <>
           <Route path="/" element={<Default />}>
             <Route path="/" element={<Blank />} />
-            <Route path="/document" element={<Document />} />
+            <Route path="/documents/:id" element={<Document />} />
           </Route>
         </>
       }
