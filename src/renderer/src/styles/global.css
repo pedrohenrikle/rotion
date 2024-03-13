@@ -5,3 +5,7 @@
 html {
   overflow: hidden;
 }
+
+.search-list {
+  overflow-y: scroll;
+}

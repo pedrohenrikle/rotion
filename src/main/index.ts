@@ -2,6 +2,8 @@ import { app, shell, BrowserWindow } from 'electron'
 import path from 'node:path'
 import { createFileRoute, createURLRoute } from 'electron-router-dom'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
+import { createTray } from './tray'
+import { createShortcuts } from './shortcuts'
 
 import './ipc'
 import './store'
@@ -13,7 +15,7 @@ function createWindow(): void {
     show: false,
     autoHideMenuBar: true,
     backgroundColor: '#17141f',
-    icon: './resources/icon.png',
+    icon: path.resolve('resources', 'icon.png'),
     titleBarStyle: 'hiddenInset',
     trafficLightPosition: {
       x: 20,
@@ -27,6 +29,9 @@ function createWindow(): void {
       sandbox: false,
     },
   })
+
+  createTray(mainWindow)
+  createShortcuts(mainWindow)
 
   mainWindow.on('ready-to-show', () => {
     mainWindow.show()
