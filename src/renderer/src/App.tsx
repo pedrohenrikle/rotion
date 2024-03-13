@@ -1,6 +1,8 @@
+import './styles/global.css'
+
 export function App(): JSX.Element {
   return (
-    <div>
+    <div className="h-screen w-screen text-rotion-100">
       <p>Hello world!</p>
     </div>
   )
