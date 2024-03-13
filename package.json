@@ -24,13 +24,23 @@
   "dependencies": {
     "@electron-toolkit/preload": "^3.0.0",
     "@electron-toolkit/utils": "^3.0.0",
+    "@radix-ui/react-collapsible": "^1.0.3",
+    "@tiptap/extension-document": "^2.2.4",
+    "@tiptap/extension-highlight": "^2.2.4",
+    "@tiptap/extension-placeholder": "^2.2.4",
+    "@tiptap/extension-typography": "^2.2.4",
+    "@tiptap/react": "^2.2.4",
+    "@tiptap/starter-kit": "^2.2.4",
     "clsx": "^2.1.0",
     "cmdk": "^1.0.0",
-    "phosphor-react": "^1.4.1"
+    "electron-router-dom": "^1.0.5",
+    "phosphor-react": "^1.4.1",
+    "react-router-dom": "^6.22.3"
   },
   "devDependencies": {
     "@electron-toolkit/tsconfig": "^1.0.1",
     "@rocketseat/eslint-config": "^2.2.2",
+    "@tailwindcss/typography": "^0.5.10",
     "@types/node": "^18.19.9",
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
